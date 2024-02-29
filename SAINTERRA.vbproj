@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE4CAC19-495C-4E12-BBDC-9F2E7CB6C666}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SAINTERRA.My.MyApplication</StartupObject>
+    <RootNamespace>SAINTERRA</RootNamespace>
+    <AssemblyName>SAINTERRA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>es-419</TargetCulture>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SAINTERRA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SAINTERRA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>INTERRA.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C0AF759B848A3089A7E2A91FC01924F2D9579405</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SAINTERRA_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Dart.Telnet, Version=4.4.0.2, Culture=neutral, PublicKeyToken=5966291b8955e4bb, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\microsoft.office.interop.excel\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.2.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clientes\Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conexion.vb" />
+    <Compile Include="Equipo\Equipos.Designer.vb">
+      <DependentUpon>Equipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Equipo\Equipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equipo\InventarioEquipo.Designer.vb">
+      <DependentUpon>InventarioEquipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Equipo\InventarioEquipo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equipo\Servidores.Designer.vb">
+      <DependentUpon>Servidores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Equipo\Servidores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fallas\Fallas.Designer.vb">
+      <DependentUpon>Fallas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fallas\Fallas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fallas\Reclamos.Designer.vb">
+      <DependentUpon>Reclamos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fallas\Reclamos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformesMensuales\frwInforme.Designer.vb">
+      <DependentUpon>frwInforme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InformesMensuales\frwInforme.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniciarSesion.Designer.vb">
+      <DependentUpon>IniciarSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IniciarSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instalación\Instalación.Designer.vb">
+      <DependentUpon>Instalación.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Instalación\Instalación.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lugares\Comunidades.Designer.vb">
+      <DependentUpon>Comunidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lugares\Comunidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lugares\Departamento.Designer.vb">
+      <DependentUpon>Departamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lugares\Departamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lugares\Municipios.Designer.vb">
+      <DependentUpon>Municipios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lugares\Municipios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Orden de Trabajo\OrdenTrabajo.Designer.vb">
+      <DependentUpon>OrdenTrabajo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Orden de Trabajo\OrdenTrabajo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos\Pagos.designer.vb">
+      <DependentUpon>Pagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos\Pagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos\Recibo.Designer.vb">
+      <DependentUpon>Recibo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos\Recibo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planes\Planes.Designer.vb">
+      <DependentUpon>Planes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planes\Planes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Dialog1.Designer.vb">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Dialog1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmBitacora.Designer.vb">
+      <DependentUpon>frmBitacora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmBitacora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmConexiones.Designer.vb">
+      <DependentUpon>frmConexiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmConexiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmDesconexiones.Designer.vb">
+      <DependentUpon>frmDesconexiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmDesconexiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salidas\Salidas2.Designer.vb">
+      <DependentUpon>Salidas2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Salidas\Salidas2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Clientes\Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipo\Equipos.resx">
+      <DependentUpon>Equipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipo\InventarioEquipo.resx">
+      <DependentUpon>InventarioEquipo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipo\Servidores.resx">
+      <DependentUpon>Servidores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fallas\Fallas.resx">
+      <DependentUpon>Fallas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fallas\Reclamos.resx">
+      <DependentUpon>Reclamos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformesMensuales\frwInforme.resx">
+      <DependentUpon>frwInforme.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IniciarSesion.resx">
+      <DependentUpon>IniciarSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instalación\Instalación.resx">
+      <DependentUpon>Instalación.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lugares\Comunidades.resx">
+      <DependentUpon>Comunidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lugares\Departamento.resx">
+      <DependentUpon>Departamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lugares\Municipios.resx">
+      <DependentUpon>Municipios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orden de Trabajo\OrdenTrabajo.resx">
+      <DependentUpon>OrdenTrabajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos\Pagos.resx">
+      <DependentUpon>Pagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos\Recibo.resx">
+      <DependentUpon>Recibo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planes\Planes.resx">
+      <DependentUpon>Planes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Dialog1.resx">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmBitacora.resx">
+      <DependentUpon>frmBitacora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmConexiones.resx">
+      <DependentUpon>frmConexiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmDesconexiones.resx">
+      <DependentUpon>frmDesconexiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salidas\Salidas2.resx">
+      <DependentUpon>Salidas2.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGENES\usuario.png" />
+    <None Include="IMAGENES\calculadora.png" />
+    <None Include="IMAGENES\archivo-excel.png" />
+    <Content Include="INTERRA.ico" />
+    <Content Include="Resources\Administrative Tools.ico" />
+    <Content Include="Resources\CALCULADORA.jpg" />
+    <Content Include="Resources\Clipboard.ico" />
+    <Content Include="Resources\Community Help.png" />
+    <Content Include="Resources\Control Panel.ico" />
+    <Content Include="Resources\Default Document.png" />
+    <Content Include="Resources\Document.ico" />
+    <Content Include="Resources\Document.png" />
+    <Content Include="Resources\easymoblog.ico" />
+    <Content Include="Resources\edit.ico" />
+    <Content Include="Resources\EXCEL.jpg" />
+    <Content Include="Resources\EXCEL1.jpg" />
+    <Content Include="Resources\GASTOS.png" />
+    <Content Include="Resources\logoFinal.jpg" />
+    <Content Include="Resources\LogoFinal.png" />
+    <None Include="Resources\logoFinal1.png" />
+    <Content Include="Resources\LOGOGLOBALTECH.png" />
+    <Content Include="Resources\money_256.png" />
+    <Content Include="Resources\money_calculator_256.png" />
+    <Content Include="Resources\PLANILLA.jpg" />
+    <Content Include="Resources\Printer.ico" />
+    <Content Include="Resources\Save.ico" />
+    <Content Include="Resources\Search.ico" />
+    <Content Include="Resources\Symbol-Delete.ico" />
+    <Content Include="Resources\WORD.ico" />
+    <Content Include="Resources\WORD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ingresos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SAP.CrystalReports14.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>SAP Crystal Reports Runtime Engine for .NET Framework</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
